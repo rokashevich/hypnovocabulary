@@ -20,3 +20,5 @@ RESOURCES += \
     hypnovocabulary.qrc
 
 win32:RC_ICONS += hypnovocabulary.ico
+
+DESTDIR = $$PWD/bundle
