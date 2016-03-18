@@ -8,4 +8,4 @@ copy %QTDIR%\bin\libgcc_s_dw2-1.dll bundle\
 copy %QTDIR%\bin\libwinpthread-1.dll bundle\
 copy "%QTDIR%\bin\libstdc++-6.dll" bundle\
 mkdir bundle\platforms
-copy %QTDIR%\plugins\platforms\qminimal.dll bundle\platforms
+copy %QTDIR%\plugins\platforms\qwindows.dll bundle\platforms
