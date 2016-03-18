@@ -1,6 +1,7 @@
 @echo off
 cd %~dp0
 set QTDIR=C:\Qt\5.6\mingw49_32
+copy dictionary.txt bundle\
 copy %QTDIR%\bin\Qt5Core.dll bundle\
 copy %QTDIR%\bin\Qt5Gui.dll bundle\
 copy %QTDIR%\bin\Qt5Widgets.dll bundle\
