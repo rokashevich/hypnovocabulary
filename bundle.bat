@@ -9,3 +9,5 @@ copy %QTDIR%\bin\libwinpthread-1.dll bundle\
 copy "%QTDIR%\bin\libstdc++-6.dll" bundle\
 mkdir bundle\platforms
 copy %QTDIR%\plugins\platforms\qwindows.dll bundle\platforms
+mkdir bundle\imageformats
+copy %QTDIR%\plugins\imageformats\qico.dll bundle\imageformats
