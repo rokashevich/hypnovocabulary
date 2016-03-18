@@ -16,7 +16,6 @@ MainWidget::MainWidget(QWidget *parent)
 	this->setWindowFlags(Qt::WindowTitleHint | Qt::WindowCloseButtonHint);
 
 	stripe_ = new Stripe;
-	stripe_->show();
 
 	buttonFont_            = new QPushButton(tr("Choose font"));
 	buttonFontColor_       = new QPushButton(tr("Choose font color"));

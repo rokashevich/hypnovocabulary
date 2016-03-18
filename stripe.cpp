@@ -23,7 +23,6 @@ Stripe::Stripe(QWidget *parent)
 	QVBoxLayout *l = new QVBoxLayout;
 	l->addWidget(textstring_);
 	this->setLayout(l);
-	this->setWindowFlags(Qt::Window | Qt::FramelessWindowHint | Qt::CustomizeWindowHint | Qt::WindowStaysOnTopHint | Qt::Dialog | Qt::Tool);
 	QSettings settings(ini_, QSettings::IniFormat);
 	this->setFont(QFont(settings.value("font-family").toString(), settings.value("font-size","16").toInt(), settings.value("font-weight").toInt()));
 	this->setFontColor(QColor(settings.value("font-color","#ffff00").toString()));
@@ -31,6 +30,8 @@ Stripe::Stripe(QWidget *parent)
 	this->setInterval(settings.value("interval","1").toInt());
 	this->setDictionary("dictionary.txt");
 	QtConcurrent::run(this, &Stripe::runHypno_);
+	this->setWindowFlags(Qt::Window | Qt::FramelessWindowHint | Qt::CustomizeWindowHint | Qt::WindowStaysOnTopHint | Qt::Dialog | Qt::Tool);
+	this->show();
 }
 
 void Stripe::setFont(const QFont &font)
