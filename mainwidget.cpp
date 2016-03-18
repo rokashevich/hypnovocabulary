@@ -102,8 +102,9 @@ void MainWidget::toggle(QSystemTrayIcon::ActivationReason r) {
 		if (!this->isVisible())
 		{
 			this->show();
-			this->setFocusPolicy(Qt::StrongFocus);
-		} else
+			this->activateWindow();
+		}
+		else
 		{
 			this->hide();
 		}
